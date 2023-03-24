@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --cta-color: #0d3a1f;
+  --cta-color-hover: #083018 ;
+  --secondary-color: #272620;
+  --primary-color: #f3f2ec;
+  --primary-color2: #f8f8f2;
+  --footer-height: 12rem;
+  --header-height: 4rem;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+body {
+  font-family:'Helvetica';
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  /* position: relative; */
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  /* height: 100vh;
+  height: 100svh; */
+}
+header.main-header {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--header-height);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+header h3 {
+  margin: 0 .5rem;
+}
+
+h3,h4 {
+  font-family: 'Helvetica';
+}
+article {
+  background-color: var(--primary-color2);
+  border-radius: 5px;
+  padding: 2rem;
+  margin: 2rem auto;
+}
+
+.button-wrapper {
+  padding: 1rem 0;
+}
+a.cta-btn span {
+  padding: .25rem;
+  vertical-align: center;
+}
+.bi-caret-right-fill {
+  font-size: 30px;
+
+  width: fit-content;
+}
+
+.btn {
+  outline: none;
+  text-decoration: none;
+  color: var(--primary-color);
+  background-color: var(--cta-color);
+  padding: 1rem;
+  border-radius: 5px;
+  transition: all .1s ease-in-out;
+  font-size: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem;
+  height: 4rem;
+}
+.btn:hover {
+  background-color: var(--cta-color-hover);
+}
+.btn:active {
+  transform: scale(.98);
+}
+
+.container {
+  padding: 1rem clamp(2rem, 3rem, 5rem);
+  margin: 1rem auto;
+  max-width: 800px;
+}
+.bi-facebook {
+  font-size: 30px;
+  margin: .5rem;
+  width: fit-content;
+}
+.face-btn, .face-btn span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .25rem .5rem;
+}
+
+footer {
+  /* position: absolute;
+  bottom: 0; */
+  height: var(--footer-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-size: 16px;
+}
+
+footer p {
+  margin: .5rem;
+}
+
