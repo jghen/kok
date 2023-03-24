@@ -89,7 +89,8 @@ a.cta-btn span, a.cta-btn i {
 }
 
 .container {
-  width: clamp(96vw, 90vw, 800px);
+  max-width: clamp(96vw, 90vw, 800px);
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
@@ -126,5 +127,11 @@ footer p {
 }
 footer p i.bi {
   margin-right: .35rem;
+}
+
+footer a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--primary-color);
 }
 
