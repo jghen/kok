@@ -130,7 +130,7 @@ footer p i.bi {
 }
 
 footer a {
-  text-decoration: none;
+  /* text-decoration: none; */
   cursor: pointer;
   color: var(--primary-color);
 }
